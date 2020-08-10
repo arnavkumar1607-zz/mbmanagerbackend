@@ -1,0 +1,34 @@
+{
+  "name": "mbmanagerbackend",
+  "version": "1.0.0",
+  "description": "Manager Portal Backend System",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnavkumar1607/mbmanagerbackend.git"
+  },
+  "author": "Akash Khalse <akashkhalse.16@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arnavkumar1607/mbmanagerbackend/issues"
+  },
+  "homepage": "https://github.com/arnavkumar1607/mbmanagerbackend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.4",
+    "sequelize": "^6.3.4",
+    "sequelize-cli": "^6.2.0",
+    "debug": "~2.6.9",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  }
+}
