@@ -38,7 +38,7 @@ router.post('/addemp' , function (req, res, next) {
 })
 
 router.post('/signup' , function (req, res, next) {
-  db.sequelize.query(`INSERT INTO manager_data ( email , firstname , lastname , pwd , address , dob , company ) values ("`+req.body.email+`" ,"`+req.body.fname+`" , "`+req.body.lname+`" , "`+req.body.pwd+`" , "`+req.body.address+`" , STR_TO_DATE("`+req.body.dob+`", '%d-%m-%Y'), "`+req.body.company+`");`).then( data => {
+  db.sequelize.query(`INSERT INTO manager_data ( email , firstname , lastname , pwd , address , dob , company ) values ("`+req.body.email+`" ,"`+req.body.fname+`" , "`+req.body.lname+`" , "`+req.body.password+`" , "`+req.body.address+`" , STR_TO_DATE("`+req.body.dob+`", '%d-%m-%Y'), "`+req.body.company+`");`).then( data => {
       res.status(200).json('success');
   }).catch ( err => {
     if(JSON.stringify(err).indexOf('email must be unique') > 0){
