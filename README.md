@@ -61,6 +61,6 @@ primary key (empid)
 Once the Database and the tables are ready. Please follow below procedures to run the backend :
 
 1. Keep MYSQL Database running
-2. Open BACKEND Project and run command 'npm start' , it will run on port 5000.
+2. Open BACKEND Project and run command 'npm install' & then 'npm start' , it will run on port 5000.
 3. Keep the server running.
 4. Run front end.
